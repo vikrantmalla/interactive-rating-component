@@ -1,0 +1,77 @@
+.card {
+    background-color: $colorDarkBlue;
+    padding: 1rem;
+    border-radius: 2rem;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @media (min-width: 62em) {
+        padding: 2rem;
+    }
+}
+
+.rating {
+    .star {
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0.5rem;
+    }
+    .info {
+        h1 {
+            color: $colorWhite;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: $colorLightGrey;
+            line-height: 1.5;
+        }
+    }
+    .rating_Option {
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            cursor: pointer;
+            color: $colorLightGrey;
+            .circles {
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 2.5rem;
+                width: 2.5rem;
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: 0.5rem;
+                &:hover {
+                    background-color: $colorOrange;
+                    color: $colorWhite;
+                }
+            }
+            .gray {
+                background-color: $colorMediumGrey;
+                color: $colorWhite;
+            }
+        }
+    }
+    button {
+        text-transform: uppercase;
+        padding: 1rem;
+        border-radius: 5rem;
+        border: none;
+        background-color: $colorOrange;
+        color: $colorWhite;
+        cursor: pointer;
+        font-weight: 700;
+        &:hover {
+            background-color: $colorWhite;
+            color: $colorOrange;
+        }
+    }
+}

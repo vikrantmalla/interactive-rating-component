@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import "./variable";
+@import "./cardRating";
+@import "./cardThankyou";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: $colorVeryDarkBlue;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.shrink {
+    transform: scale(0);
+    transition: 300ms;
+    transform-origin: left center;
+}
+
+.grow {
+    transform: scale(1) translateX(-50%);
+    transition: 300ms;
+    transition-delay: 300ms;
+}
