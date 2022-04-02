@@ -5,7 +5,6 @@
   background-color: #252d37;
   padding: 1rem;
   border-radius: 2rem;
-  max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,7 +17,14 @@
 
 @media (min-width: 62em) {
   .card {
+    width: 400px;
     padding: 2rem;
+  }
+}
+
+@media (min-width: 87em) {
+  .card {
+    width: 500px;
   }
 }
 
@@ -39,14 +45,34 @@
   padding: 0.5rem;
 }
 
+@media (min-width: 87em) {
+  .rating .star {
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 1rem;
+  }
+}
+
 .rating .info h1 {
   color: white;
   margin-bottom: 0.5rem;
 }
 
+@media (min-width: 87em) {
+  .rating .info h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .rating .info p {
   color: #959eac;
   line-height: 1.5;
+}
+
+@media (min-width: 87em) {
+  .rating .info p {
+    font-size: 1.2rem;
+  }
 }
 
 .rating .rating_Option ul {
@@ -87,6 +113,14 @@
   color: white;
 }
 
+@media (min-width: 87em) {
+  .rating .rating_Option ul .circles {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.2rem;
+  }
+}
+
 .rating .rating_Option ul .gray {
   background-color: #7c8798;
   color: white;
@@ -106,6 +140,12 @@
 .rating button:hover {
   background-color: white;
   color: #fb7413;
+}
+
+@media (min-width: 87em) {
+  .rating button {
+    font-size: 1.5rem;
+  }
 }
 
 .thankyou {
@@ -128,6 +168,18 @@
   padding: 1.5rem 1rem;
 }
 
+@media (min-width: 62em) {
+  .thankyou {
+    width: 400px;
+  }
+}
+
+@media (min-width: 87em) {
+  .thankyou {
+    width: 500px;
+  }
+}
+
 .thankyou img {
   width: 55%;
 }
@@ -142,14 +194,32 @@
   color: #fb7413;
 }
 
+@media (min-width: 87em) {
+  .thankyou .rating_Text p {
+    font-size: 1.4rem;
+  }
+}
+
 .thankyou .thankyou_Note h2 {
   color: white;
   margin-bottom: 0.5rem;
 }
 
+@media (min-width: 87em) {
+  .thankyou .thankyou_Note h2 {
+    font-size: 1.6rem;
+  }
+}
+
 .thankyou .thankyou_Note p {
   color: #959eac;
   line-height: 1.5;
+}
+
+@media (min-width: 87em) {
+  .thankyou .thankyou_Note p {
+    font-size: 1.2rem;
+  }
 }
 
 * {
